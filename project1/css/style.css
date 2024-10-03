@@ -1,0 +1,1080 @@
+@charset "utf-8";
+/* home */
+.home_body{
+    display: flex;
+}
+.home_body header{
+    height: 100vh;
+    flex-basis: 35%;
+    padding-top: 180px;
+    background: url(../images/home-main-pic.jpg) no-repeat center center/cover;
+}
+.home_body header h1{
+    text-align: center;
+}
+.home_header_logo{
+    width: 360px;
+}
+.home_main_list::before{
+    content:"";
+    width: 45%;
+    background: url(../images/logo.png) no-repeat center center/80%;
+}
+.home_body main{
+    flex-basis: 65%;
+}
+.home_body main{
+    display: flex;
+    align-items: center;
+}
+.home_main_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.home_main_list li{
+    flex-basis: 45%;
+    margin-bottom: 20px;
+}
+.home_main_list img{
+    max-width: 100%;
+}
+.home_main_list li a:hover{
+    filter: brightness(110%);
+}
+.home_main_list li p{
+    background: rgb(221, 221, 221);
+    font-size: 22px;
+    font-weight: 600;
+    font-family: Noto Serif TC, serif;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* page的共通設定 + info */
+.page_header_h1{
+    font-size: 120px;
+    font-weight: 900;
+    font-family: "Whisper","Kanit", sans-serif;
+    letter-spacing: 0.08em;
+    padding: 90px 0 10px;
+    text-align: center;
+    background: linear-gradient(0deg, rgba(255, 242, 129, 0.772) 0%, rgb(255, 0, 0) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip:text;
+    color:transparent;
+}
+.page_body main{
+    max-width: 1280px;
+    margin: 0 auto 60px;
+}
+.page_body h3{
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 45px;
+}
+.lead{
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.map iframe{
+    width: 100%;
+    height: 360px;
+    margin-bottom: 20px;
+}
+.contact_div{
+    display: flex;
+    font-size: 20px;
+    font-family: Noto Serif TC, serif;
+}
+.contact_info{
+    margin-right: 150px;
+    line-height: 1.5;
+}
+.opening_hours_title{
+    font-weight: 800;
+}
+.opening_hours {
+    line-height: 1.5;
+}
+.info_gallery{
+    display: grid;
+    grid-template-rows: 175px 175px 300px;
+    grid-template-columns: 45% 25% 30%;
+}
+.photo_1{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+.photo_2{
+    grid-row: 1/3;
+    grid-column: 2/3;
+}
+.photo_3{
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+.photo_4{
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.photo_5{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+.photo_6{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.photo_7{
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+.info_gallery li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    background: rgba(255, 241, 134, 0.511);
+    text-align: center;
+}
+footer img{
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* concept */
+.concept_detail_section{
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 50px;
+    background: rgba(251, 237, 183, 0.486);
+}
+.concept_detail_section h3{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: end;
+}
+.concept_photo{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+.concept_intro{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.concept_photo img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.concept_intro{
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.5;
+}
+.reverse{
+    grid-template-columns: 60% 40%;
+}
+.reverse h3{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.reverse .concept_photo{
+    grid-row: 1/3;
+    grid-column:  2/3;
+}
+.reverse .concept_intro{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+/* 導覽列 */
+.navigation_list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    z-index: 100;
+    background: linear-gradient(0deg, rgba(255, 241, 134, 0.269) 0%, rgb(255, 241, 134) 100%);
+    padding: 8px;
+}
+.navigation_list li{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Truculenta", sans-serif;
+    padding: 10px;
+    flex-basis: 15%;
+    text-align: center;
+}
+.navigation_list li a:hover{
+   text-decoration: underline;
+}
+.nav_logo_img{
+    width: 160px;
+    height: 60px;
+    object-fit: cover;
+}
+.user_search_p{
+    background: white;
+    border-radius: 10px;
+}
+.user_search{
+    width:80px;
+    height:30px;
+    font-size:18px;
+}
+.user_search_img{
+    margin: 0 0 5px 15px;
+}
+.nav_total_cart{
+   position:relative;   
+}
+.total_cart{
+    width: 45px;
+    height: 45px;
+}
+.cart_num{
+    position:absolute;
+    right:90px;
+    top:10px;
+    background: orange;
+    font-size:14px;
+    padding:0 5px;
+    color:white;
+    border-radius:8px;
+}
+.phone_navigation_list{
+    display: none;
+}
+
+/* menu */
+/* body{
+    background: linear-gradient(145deg, rgba(255, 239, 166, 0.333) 28%,rgba(250, 173, 137, 0.397)  82%);
+} */
+/* 商品列 */
+.product_list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product_list li{
+    border: 3px solid rgba(254, 203, 203, 0.673);
+    width:300px;
+    height:300px;
+    padding: 10px;
+    margin:10px 30px 50px;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0 0 3px rgba(0,0,0,.16);
+}
+.image{
+    text-align: center;
+}
+.product_img{
+    width:260px;
+    height:200px;
+    object-fit: cover ;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.product_name{
+    font-family: Noto Serif TC, serif;
+    margin: 0 10px 10px 10px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align:center;
+    white-space: nowrap;
+}
+.discount{
+    background: rgb(244, 80, 80);
+    color: white;
+    border-radius: 2px;
+    position: absolute;
+    left: 25px;
+    top:25px;
+    font-size: 18px;
+    padding:3px;
+}
+@keyframes discountAnimation{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    50.1%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+.discount{
+    animation-name: discountAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.add_cart{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 25px;
+    bottom: 40px;
+}
+.origin_price{
+    color:rgb(98, 94, 94);
+    text-decoration-line: line-through;
+    font-size: 16px;
+    font-family: "Kanit", "Quando", sans-serif;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.discount_price{
+    color: rgb(235, 29, 29);
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Kanit", "Quando", sans-serif;
+    position: absolute;
+    left: 20px;
+    bottom: 42px;
+}
+.check-icon{
+    margin: 0 0 0 55px;
+    width: 20px;
+    height: 20px;
+}
+.menu .add_success_word{
+    font-family: Noto Serif TC, serif;
+    font-size: 18px;
+    font-weight: 600;
+    color:  rgb(6, 149, 6);
+}
+
+/* checkout部分 */
+/* checkout-左邊(加入購物車的商品列) */
+.checkout_main{
+    display: flex;
+    margin: 120px 60px 0;
+}
+.checkout_product_list{
+    flex-basis:60%;
+}
+.product_row{
+    display: flex;
+    background: rgba(255, 220, 199, 0.432);
+    border:  rgba(241, 107, 107, 0.082) solid 2px;
+    border-radius: 10px;
+    margin-bottom:40px;
+    padding: 10px 20px;
+}
+.checkout_product_img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px 5px;
+}
+.checkout_product_description{
+    display: flex;
+}
+.checkout_product_name_price{
+    margin: 40px 20px 35px 20px;
+}
+.checkout_product_name{
+    font-family: Noto Serif TC, serif;
+    font-size: 22px;
+    font-weight: 600;
+    white-space: nowrap;
+   }
+.checkout_discount_price{
+    display: flex;
+    font-family: Noto Serif TC, serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0px 20px 0px;
+    color: red;
+}
+.checkout_origin_price{
+    font-family: Noto Serif TC, serif;
+    font-size: 18px;
+    text-decoration: line-through;
+    color: gray;
+    padding-right: 15px;
+}
+.checkout_num{
+    font-family: Noto Serif TC, serif;
+    font-size: 16px;
+    white-space: nowrap;
+}
+.checkout_buy_num{
+    font-size: 16px;
+    margin-left: 4px;
+    width: 50px;
+    border: rgb(254, 186, 186) solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: baseline;
+}
+.delete_product{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 20px 0 0 0;
+    background: orange;
+    border: orange solid 2px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+.delivery_options{
+    font-family: Noto Serif TC, serif;
+    margin: 40px 0 0 20px;
+    text-align: center;
+    border-left:rgba(244, 139, 139, 0.404) solid 2px;
+    white-space: nowrap;
+}
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+    margin: 15px 0;
+}
+.delivery_choice{
+    display:flex;
+    font-size: 16px;
+    margin: 15px 30px;
+}
+
+/* checkout-右邊(商品總數、總金額、結帳按鈕...) */
+.checkout_account_list{
+    flex-basis: 20%;
+    border:rgba(244, 139, 139, 0.404) solid 3px;
+    background:rgba(255, 220, 199, 0.215);
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    right: 60px;
+    top: 120px;
+    z-index: 50;
+} 
+.checkout_account_list h3{
+    font-family: Noto Serif TC, serif;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: rgba(244, 139, 139, 0.534) solid 3px;
+    margin: 20px 0;
+    padding: 0 0 5px 0;
+} 
+.checkout_account_list p{
+    font-family: Noto Serif TC, serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.checkout_account_list .amount{
+    font-family: Noto Serif TC, serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 60px 0;
+    padding-top: 20px;
+    border-top: rgba(244, 139, 139, 0.534) solid 2px;
+}
+.checkout_button{
+    font-family: Noto Serif TC, serif;
+    font-size: 20px;
+    font-weight: 800;
+    background-color:orange;
+    border-radius: 10px;
+    padding: 5px 30px;
+    margin: 15px;
+}
+.checkout_button:hover{
+    background-color:rgba(247, 156, 156, 0.912);
+    margin-left: 30px;
+    transition-property: background-color, margin-left;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    transition-delay: 0ms;
+}
+
+/* 各商品頁面 */
+.each_product_main{
+    margin: 120px 200px 20px;
+    position: relative;
+}
+.each_product_detail{
+    display: flex;
+}
+.each_product_img{
+    width: 450px;
+    height: 350px;
+    object-fit: cover ;
+    margin: 0 0 20px 65px ;
+}
+.each_name{
+    font-family: Noto Serif TC, serif;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 30px 0 10px 40px;
+}
+.each_review_part{
+    display:flex;
+}
+.each_stars{
+    font-family: Noto Serif TC, serif;
+    font-size: 14px;
+    color:rgb(98, 94, 94);
+    margin: 5px 0 10px 40px;
+}
+.each_stars-img{
+    width: 90px;
+    height: 20px;
+    margin: 3px 0 10px 10px;
+}
+.each_review{
+    font-family: Noto Serif TC, serif;
+    font-size: 14px;
+    color:rgb(98, 94, 94);
+    margin: 5px 0 10px 15px;
+}
+.each_sell_num{
+    font-family: Noto Serif TC, serif;
+    font-size: 14px;
+    color:rgb(98, 94, 94);
+    margin: 5px 0 10px 40px;
+}
+.each_discount{
+    background: rgb(244, 80, 80);
+    color: white;
+    border-radius: 6px;
+    padding: 3px;
+    font-size: 18px;
+    font-family: Noto Serif TC, serif;
+    text-align: center;
+    height: 30px;
+    margin: 2px 8px;
+   /*  position: absolute;
+    left: 100px;
+    top: 10px; */
+}
+@keyframes eachDiscountAnimation{
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    50.1%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
+.each_discount{
+    animation-name: eachDiscountAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.each_price_part{
+    display: flex;
+    margin: 20px 40px;
+    padding-right: 100px;
+    border-radius: 10px;
+    background:rgba(252, 209, 209, 0.188); 
+}
+.each_origin_price{
+    color:rgb(98, 94, 94);
+    text-decoration-line: line-through;
+    font-size: 24px;
+    font-family: "Kanit", "Quando", sans-serif;
+    margin: 5px 0 5px 10px;
+}
+.each_discount_price{
+    color: rgb(235, 29, 29);
+    font-weight: 800;
+    font-size: 24px;
+    font-family:  "Kanit", "Quando", sans-serif;
+    margin: 5px 0 5px 20px;
+}
+.each_num{
+    font-family: Noto Serif TC, serif;
+    font-size: 18px;
+    margin: 25px 0 10px 40px;
+}
+select{
+    vertical-align: baseline;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-left: 5px;
+    padding: 0px 25px;
+    background: url(../images/arrow.png) no-repeat 90% 50%/10%;
+} 
+.each_product_addToCartButton{
+    font-family: Noto Serif TC, serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color:orange;
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 20px 40px 10px 40px;
+}
+.each_product_addToCartButton:hover{
+    background-color:rgba(247, 156, 156, 0.912);
+    margin-left: 50px;
+    transition-property: background-color, margin-left;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    transition-delay: 0ms;
+    }
+.material-symbols-outlined{
+    font-size: 18px;
+    color: rgb(6, 149, 6);
+    margin: 0 0 10px 40px;
+}
+.add_success_word{
+    font-family: Noto Serif TC, serif;
+    font-size: 18px;
+    font-weight: bold;
+    color:  rgb(6, 149, 6);
+}
+.each_product_introduction_title{
+    font-family: Noto Serif TC, serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 25px 0 15px ;
+    border-radius: 10px;
+    border-bottom: rgb(244, 139, 139) solid 2px;
+    background: rgba(252, 209, 209, 0.188);
+}
+.each_product_introduction{
+    font-family: Noto Serif TC, serif;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+
+/* 手機、平板 */
+@media screen and (max-width: 1024px){
+/* home */
+    .home_body{
+        display: block;
+    }
+    .home_body header{
+        height: 85vh;
+        margin-bottom: 60px;
+        padding-top: 120px;
+    }
+    .home_body header h1{
+        text-align: center;
+    }
+    .home_header_logo{
+        width: 300px;
+    }
+    .home_main_list{
+        display: block;
+    }
+    .home_main_list li{
+        margin-bottom: 40px;
+    }
+    .home_main_list li p{
+        padding: 8px 0;
+    }
+
+/* info */
+    .page_header_h1{
+        font-size: 60px;
+        letter-spacing: .07em;
+        padding: 70px 0 10px;
+    }
+    .page_body main{
+        margin: 0 30px 30px;
+    }
+    .page_body h3{
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    .lead{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .map iframe{
+        height: 240px;
+        margin-bottom: 20px;
+    }
+    .contact_div{
+        display: block;
+        font-size: 14px;
+    }
+    .contact_info{
+        margin-right: 0px;
+    }
+    .opening_hours{
+        padding-top: 10px;
+    }
+    .info_gallery{
+        display: grid;
+        grid-template-rows: 40vw 30vw 30vw 40vw 40vw;
+        grid-template-columns: 50% 50%;
+    }
+    .photo_1{
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    .photo_2{
+        grid-row: 2/4;
+        grid-column: 1/2;
+    }
+    .photo_3{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .photo_4{
+        grid-row: 3/4;
+        grid-column: 2/3;
+    }
+    .photo_5{
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+    .photo_6{
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+    .photo_7{
+        grid-row: 5/6;
+        grid-column: 2/3;
+    }
+    .info_gallery li img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* concept */
+    .concept_detail_section{
+        display: block;
+        background: none;
+    }
+    .only_pc{
+        display: none;
+    }
+    .concept_photo img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+    .concept_intro{
+        text-align: left;
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 15px 10px;
+    }
+
+/* 導覽列 */
+    .navigation_list{
+        display: none;
+    }
+    .phone_navigation_list{
+        display: block;
+    }
+    .phone_top_nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width:100%;
+        z-index: 100;
+        background: linear-gradient(0deg, rgba(255, 241, 134, 0.445) 0%, rgba(255, 241, 134, 0.929) 100%);
+        padding: 8px;
+    }
+    .logo_img{
+        width: 100px;
+        height: 40px;
+    }
+    .user_search_p{
+        background: white;
+        border-radius: 10px;
+        width: 100px;
+        height: 25px;
+        margin: 0 20px;
+    }
+    .user_search{
+        width:70px;
+        height:20px;
+        margin-left: 5px;
+        font-size: 12px;
+    }
+    .user_search_img{
+        width: 15px;
+        height: 15px;
+        margin: 5px 0 0 5px;
+    }
+    .total_cart{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    .cart_num{
+        position:absolute;
+        right:-6px;
+        top:-2px;
+        background: orange;
+        font-size:10px;
+        color:white;
+        border-radius:8px;
+    }
+    #side_nav_controller{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+    }
+    .side_nav_button{
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+        background: white;
+        border-radius: 4px;
+        position: relative;
+    }
+    .side_nav_button span{
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+        display: block;
+        overflow: hidden;
+    }
+    .side_nav_button::before{
+        content:"";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        right: 5px;
+        background: orange;
+        width: 20px;
+        height: 2px;
+        box-shadow: 0 7px orange, 0 -6px orange;
+    }
+    .phone_side_nav{
+        background: rgb(249, 242, 179);
+        width: 80%;
+        height: 100vh;
+        position: absolute;
+        top: 55px;
+        left: -100%;
+        z-index: 20;
+        transition: .5s;
+    }
+    .phone_side_nav li{
+        padding: 15px;
+        border-bottom: 1px solid  rgba(239, 212, 6, 0.884);
+    }
+    #side_nav_controller:checked ~.phone_side_nav{
+        position: fixed;
+        left: 0;
+        top: 55px;
+    }
+
+
+/* menu */
+    /* .menu_main_title{
+        position: relative;
+    }
+    .menu_main_title h1{
+        font-size: 80px;
+    }
+    .menu_body{
+        margin-bottom: 20px;
+    } */
+/* 商品列 */
+    .product_list li{  
+        width:160px;
+        height:160px;
+        padding: 10px;
+        margin:10px 5px;
+        border-radius: 5px;
+    }
+    .product_img{
+        width:140px;
+        height:100px;
+        margin: 2px 0px;
+        border-radius: 5px;
+    }
+    .product_name{
+        font-size: 14px;
+        margin: 5px 0;
+        padding-left: 3px;
+    }
+    .discount{
+        left: 12px;
+        top: 12px;
+        font-size: 12px;
+    }
+    .add_cart{
+        width: 20px;
+        height: 20px;    
+        right: 6px;
+        bottom: 18px;
+    }
+    .origin_price{
+        left: 12px;
+        bottom: 12px;
+        font-size: 10px;
+    }
+    .discount_price{
+        left: 10px;
+        bottom: 22px;
+        font-size: 12px;
+    }
+    .check-icon{
+        margin: 0 0 8px 10px;
+        width: 12px;
+        height: 12px;
+    }
+    .menu .add_success_word  {
+        font-size: 12px;
+        white-space: nowrap;
+        display: inline-block;
+        margin: 0 0 8px 0;
+    }
+
+/* 各商品頁面 */
+    .each_product_main{
+        margin: 100px 40px;
+        position: relative;
+    }
+    .each_product_detail{
+
+        display: block;
+    }
+    .each_product_img{
+        
+        display: block;
+        width: 250px;
+        height: 150px;
+        margin: auto;
+    }
+    .each_name{
+        font-size: 30px;
+        margin: 10px 70px;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .each_stars{
+        margin: 5px 0px 10px 50px;    
+    }
+    .each_sell_num{
+        margin: 5px 0 10px 50px;
+    }
+    .each_price_part{
+        padding-right: 0px;
+        margin: 20px 50px;
+    }
+    .each_discount{
+        font-size: 16px;
+        padding: 5px;
+        height: 30px;
+    }
+    .each_num{
+        margin: 25px 0 10px 50px;
+    }
+    .each_product_addToCartButton{
+        margin: 10px 30px 5px 50px;
+        padding: 7px 30px;
+    }
+    .each_product_main .check-icon{
+        margin: 0 0 0 50px;
+        width: 20px;
+        height: 20px;
+    }
+    .each_product_introduction{
+        font-size: 18px;
+    }
+
+    /* 結帳頁面 */
+    .checkout_main{
+        display: block;
+        margin: 80px 30px 0;
+    }
+    .product_row{
+        display: block;
+    }
+    .checkout_product_img{
+        display: block;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }    
+    .checkout_product_name_price{
+        flex-basis: 55%;
+        margin: 20px 0px 10px 0px;
+        padding: 0 20px 0 30px;
+    }     
+    .checkout_product_name{
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .checkout_num{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .checkout_buy_num{
+        margin-left: 2px;
+        font-size: 14px;
+        width: 40px;
+    }
+    .delete_product{
+        font-size: 14px;
+        font-weight: 600;
+        padding: 3px;
+        white-space: nowrap;
+    }
+    .delivery_options{
+        margin: 30px 0 10px;
+    }
+    .delivery_options h3{
+        font-size: 16px;
+        margin: 10px 0 0;
+    }
+    .delivery_choice{
+        white-space: nowrap;
+        font-size: 14px;
+        margin: 15px;
+    }
+
+    /* 結帳頁面-總表 */
+    .checkout_account_list{
+        position: static;
+        margin-bottom: 20px;
+    }
+   .checkout_account_list h3,.checkout_account_list .amount, .checkout_button {
+    font-size: 18px;
+    }
+    .checkout_account_list p{
+        font-size: 16px;
+    }
+
+}
