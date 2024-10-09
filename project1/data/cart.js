@@ -35,7 +35,7 @@ export function addProductToCart(productId, buyNum=1)
         cart.push                                           
         ({                                                          
             id: productId,
-            num: 1,
+            num: buyNum,
             deliveryId: "1"
         });
     };

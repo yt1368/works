@@ -40,7 +40,7 @@ export function generateProductList(products)   //(1)生成商品列、(2)商品
             {
                 let productId = addToCartButton.dataset.productId;
                 value.preventDefault();                                 //preventDefault()阻止預設行為(連結到各商品的介紹頁面)
-                addProductToCart(productId);                            //addProductToCart()定義在cart.js中
+                addProductToCart(productId,1);                            //addProductToCart()定義在cart.js中
                                                                         
                 showSuccessAddMessage(productId);                       //showSuccessAddMessage()定義在下方
                 presentNav();                                           //presentNav()定義在navigation.js中                                          
